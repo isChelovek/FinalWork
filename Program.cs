@@ -19,3 +19,16 @@ bool start = true;
      }
      Write("]");
 }
+
+int lengthString (string inputString) // Подсчет символов в строке
+{
+    int count = 0;
+    if (inputString != "")
+    {
+        foreach (var item in inputString)
+        {
+            ++count;
+        }
+    }
+    return count;
+}
