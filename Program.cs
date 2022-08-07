@@ -2,7 +2,7 @@
 using static System.Console;
 
 bool startProg = true;
-WriteLine("Введите число строк в массиве. Число строк должно быть больше 0 и меньше 2147483647. Для выхода введите 0");
+WriteLine("Введите число строк в массиве. Число строк должно быть больше 0 и меньше 2147483647.");
 WriteLine("Для выхода введите 0");
 Write("Введите число строк: ");
  string caseSwitch = "Start";
@@ -21,7 +21,6 @@ while (startProg)
             }
             if (numWords == 0)
             {
-                WriteLine("Прощайте");
                 caseSwitch = "exit";
                 break;
             }     
@@ -53,6 +52,7 @@ while (startProg)
         }
         break;
         case "exit":
+            WriteLine("Прощайте");
             startProg = false;
         break;
         default:
