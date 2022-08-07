@@ -56,6 +56,7 @@ while (startProg)
         }
         break;
         case "exit":
+            WriteLine();
             WriteLine("Прощайте");
             startProg = false;
         break;
