@@ -6,5 +6,9 @@
 
 1. [Расположение репозитория](https://github.com/isChelovek/FinalWork)
 2. Алгоритм блок схема алгоритма расположена в двух файлах.
-* findThreeLengthRow.drawio.png - алгоитм метода выбора строк меньших или равным трем символам
-* lengthString.drawio.png - метод подсчета символов в строке. Вызывается в algoritm
+* [findThreeLengthRow.drawio.png](findThreeLengthRow.drawio.png "findThreeLengthRow") - алгоитм метода выбора строк меньших или равным трем символам
+
+* [lengthString](lengthString.drawio.png "lengthString") - метод подсчета символов в строке. Вызывается в findThreeLengthRow. Был написан свой метод вместо string.length.
+3. Проект снабжон README.md
+4. Метод findThreeLengthRow возвращает массив строк длиной менее или равное трем символам.
+5. При написание проекта было использовано несколько ветвей. Все ветви объедены в master.
