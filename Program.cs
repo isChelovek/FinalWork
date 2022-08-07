@@ -1,10 +1,14 @@
 ﻿using System;
 using static System.Console;
 
+Clear();
+
 bool startProg = true;
 WriteLine("Введите число строк в массиве. Число строк должно быть больше 0 и меньше 2147483647.");
 WriteLine("Для выхода введите 0");
+WriteLine();
 Write("Введите число строк: ");
+
  string caseSwitch = "Start";
  int numWords = 0;
  string[] userArray = {""};
@@ -31,7 +35,7 @@ while (startProg)
             userArray = new string[numWords];
             for (int i = 0; i < numWords; i++)
             {
-                WriteLine($"Веедите строку номер {i+1}");
+                Write($"Веедите строку номер {i+1}: ");
                 userArray[i] = ReadLine();
             }
             caseSwitch = "findElements";  
