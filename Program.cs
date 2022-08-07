@@ -4,7 +4,7 @@ using static System.Console;
 bool startProg = true;
 WriteLine("Введите число строк в массиве. Число строк должно быть больше 0 и меньше 2147483647. Для выхода введите 0");
 WriteLine("Для выхода введите 0");
-Write("Введите число: ");
+Write("Введите число строк: ");
  string caseSwitch = "Start";
  int numWords = 0;
  string[] userArray = {""};
@@ -32,7 +32,7 @@ while (startProg)
             userArray = new string[numWords];
             for (int i = 0; i < numWords; i++)
             {
-                WriteLine($"Веедите слово номер {i+1}");
+                WriteLine($"Веедите строку номер {i+1}");
                 userArray[i] = ReadLine();
             }
             caseSwitch = "findElements";  
@@ -43,7 +43,7 @@ while (startProg)
         Write(" -> ");
         if (resultArray.Length == 0) 
         {
-            WriteLine("В массиве нет слов длинной меньше и равных трем сиволам");
+            WriteLine("В массиве нет строк длинной меньше и равных трем сиволам");
             caseSwitch = "exit";
         }
         else
@@ -61,7 +61,7 @@ while (startProg)
     }
 } // Main while
 
-int checkUserNum (string text)
+int checkUserNum (string text) // Метод проверки пользовательского ввода
 {
     bool start = true;
     int result = -1; // Магическое число обозначающе неправильный ввод
@@ -85,7 +85,8 @@ int checkUserNum (string text)
         start = false;
     }
     return result;
-}
+} // checkUserNum
+
 
 string[] findThreeLengthRow(string[] inputArray) // метод поиска строк меньше или равное трем
 {
@@ -107,7 +108,7 @@ string[] findThreeLengthRow(string[] inputArray) // метод поиска ст
     return outputArray;
 } // findThreeLengthRow
  
-void printArray(string[] array)
+void printArray(string[] array) // Метод печати массива в консоль
 {
     Write("[");
      for (int i = 0; i < array.Length; i++)
